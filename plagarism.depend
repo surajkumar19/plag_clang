@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1505707902 source:c:\users\suraj kumar\desktop\msit\4.cspp2\c\project\plagarism\main.c
+	<stdio.h>
+	<unistd.h>
+	<errno.h>
+	<string.h>
+	<stdlib.h>
+	<math.h>
+	<dirent.h>
+	"global.h"
+	"bagofwords.h"
+	"lcs.h"
+	"fingerprint.h"
+
+1505461985 c:\users\suraj kumar\desktop\msit\4.cspp2\c\project\plagarism\bagofwords.h
+
+1505462081 c:\users\suraj kumar\desktop\msit\4.cspp2\c\project\plagarism\lcs.h
+
+1505462170 c:\users\suraj kumar\desktop\msit\4.cspp2\c\project\plagarism\fingerprint.h
+
+1505462346 c:\users\suraj kumar\desktop\msit\4.cspp2\c\project\plagarism\global.h
+
