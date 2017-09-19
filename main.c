@@ -21,7 +21,7 @@ void main()
     int i,j;
     for(i=0;i<fcount;i++)
     {
-        printf("%s\n",file[i]);
+        //printf("%s\n",file[i]);
     }
     for (i=0;i<fcount;i++)
     {
@@ -57,10 +57,11 @@ static void scan_dir(const char *dir)
         if(c>1)
     	{
     		fcount+=1;
-    		//strcpy(file[ff],dir);
-	    	strcat(file[ff],entry->d_name);
-	    	//strcpy(name[ff],entry->d_name);
-	    	//printf("%s\n",file[ff]);
+    		strcpy(file[ff],dir);
+    		strcat(file[ff],"\\");
+            strcat(file[ff],entry->d_name);
+	    	strcpy(name[ff],entry->d_name);
+	    	printf("%s\n",name[ff]);
 	    	ff+=1;
     	}
     	c+=1;
@@ -187,12 +188,12 @@ void printmatrix()
     printf("           ");
     for(i=0;i<fcount;i++)
     {
-        printf("%s  ",file[i]);
+        printf("%s  ",name[i]);
     }
     printf("\n");
     for (i=0;i<fcount;i++)
     {
-        printf("%s  ",file[i]);
+        printf("%s  ",name[i]);
         for (j=0;j<fcount;j++)
         {
             printf("%*.2f     ",6,bagofwordsplag[k]);
@@ -210,12 +211,12 @@ void printmatrix()
     printf("           ");
     for(i=0;i<fcount;i++)
     {
-        printf("%s  ",file[i]);
+        printf("%s  ",name[i]);
     }
     printf("\n");
     for (i=0;i<fcount;i++)
     {
-        printf("%s  ",file[i]);
+        printf("%s  ",name[i]);
         for (j=0;j<fcount;j++)
         {
             printf("%*.2f     ",6,lcsplag[k]);
@@ -234,12 +235,12 @@ void printmatrix()
     printf("           ");
     for(i=0;i<fcount;i++)
     {
-        printf("%s  ",file[i]);
+        printf("%s  ",name[i]);
     }
     printf("\n");
     for (i=0;i<fcount;i++)
     {
-        printf("%s  ",file[i]);
+        printf("%s  ",name[i]);
         for (j=0;j<fcount;j++)
         {
             printf("%*.2f     ",6,fingerplag[k]);
